@@ -4,6 +4,7 @@
       <sideselect></sideselect>
       <sidebar v-show="!isFullScreen" class="bar-slide"></sidebar>
       <mainMap></mainMap>
+      <mapTools></mapTools>
     </div>
     <bottomBar></bottomBar>
   </div>
@@ -15,6 +16,7 @@ import MainMap from './components/Map.vue'
 import Sidebar from './components/Sidebar.vue'
 import SideSelect from './components/SideSelect.vue'
 import BottomBar from './components/BottomBar.vue'
+import MapTools from './components/MapTools.vue'
 
 export default Vue.extend({
   name: 'app',
@@ -23,6 +25,7 @@ export default Vue.extend({
     'sidebar': Sidebar,
     'sideselect': SideSelect,
     'bottomBar' : BottomBar,
+    'mapTools' : MapTools,
   },
   computed: {
     isFullScreen(): boolean{
